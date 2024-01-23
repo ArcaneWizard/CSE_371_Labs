@@ -1,0 +1,1213 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+cd "G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:17 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:07:17 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work parking_lot_change_testbench 
+# Start time: 17:07:17 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.parking_lot_change_testbench
+# Loading work.parking_lot_change
+# ** Error: Cannot open macro file: parking_lot_change_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: parking_lot_change_wave.do
+#     while executing
+# "do parking_lot_change_wave.do"
+add wave -position end  sim:/parking_lot_change_testbench/clk
+add wave -position end  sim:/parking_lot_change_testbench/reset
+add wave -position end  sim:/parking_lot_change_testbench/a
+add wave -position end  sim:/parking_lot_change_testbench/b
+add wave -position end  sim:/parking_lot_change_testbench/enter
+add wave -position end  sim:/parking_lot_change_testbench/exit
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlfta68b80".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta68b80
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1/parking_lot_change_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:07:41 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:07:41 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:07:42 on Jan 12,2024, Elapsed time: 0:00:25
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work parking_lot_change_testbench 
+# Start time: 17:07:42 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.parking_lot_change_testbench
+# Loading work.parking_lot_change
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftw5yxyt".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw5yxyt
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module parking_lot_change_testbench at ./parking_lot_change.sv line 112
+# ** Error: invalid command name "ation"
+# Error in macro ./runlab.do line 28
+# invalid command name "ation"
+#     while executing
+# "ation"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:34:34 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:34:34 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:34:34 on Jan 12,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 17:34:34 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:34:35 on Jan 12,2024, Elapsed time: 0:26:53
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_bit_counter_testbench 
+# Start time: 17:34:35 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.five_bit_counter_testbench
+# Loading work.five_bit_counter
+# ** Error: Cannot open macro file: five_bit_counter_wave.do
+# Error in macro ./runlab.do line 18
+# Cannot open macro file: five_bit_counter_wave.do
+#     while executing
+# "do five_bit_counter_wave.do"
+add wave -position end  sim:/five_bit_counter_testbench/clk
+add wave -position end  sim:/five_bit_counter_testbench/reset
+add wave -position end  sim:/five_bit_counter_testbench/inc
+add wave -position end  sim:/five_bit_counter_testbench/dec
+add wave -position end  sim:/five_bit_counter_testbench/out
+add wave -position end  sim:/five_bit_counter_testbench/count
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftkkc3ec".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkkc3ec
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1/five_bit_counter_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:35:04 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:35:04 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:35:04 on Jan 12,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 17:35:04 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:35:05 on Jan 12,2024, Elapsed time: 0:00:30
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_bit_counter_testbench 
+# Start time: 17:35:05 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.five_bit_counter_testbench
+# Loading work.five_bit_counter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftjqtr2t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjqtr2t
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module five_bit_counter at ./five_bit_counter.sv line 33
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:36:19 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:36:19 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:36:19 on Jan 12,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 17:36:19 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:36:20 on Jan 12,2024, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_bit_counter_testbench 
+# Start time: 17:36:20 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.five_bit_counter_testbench
+# Loading work.five_bit_counter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftd8my3r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftd8my3r
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module five_bit_counter_testbench at ./five_bit_counter.sv line 59
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:38:46 on Jan 12,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 17:38:46 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:38:46 on Jan 12,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 17:38:46 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:38:47 on Jan 12,2024, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_bit_counter_testbench 
+# Start time: 17:38:47 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.five_bit_counter_testbench
+# Loading work.five_bit_counter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlft27b1t8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft27b1t8
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module five_bit_counter_testbench at ./five_bit_counter.sv line 59
+# ** Error: invalid command name "es"
+# Error in macro ./runlab.do line 29
+# invalid command name "es"
+#     while executing
+# "es"
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:32 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 00:43:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:32 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 00:43:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:32 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 00:43:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:32 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 00:43:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:32 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# ** Error: ./DE1_SoC.sv(26): (vlog-2730) Undefined variable: 'SW0'.
+# ** Error: ./DE1_SoC.sv(34): (vlog-2730) Undefined variable: 'SW0'.
+# -- Compiling module DE1_SoC_testbench
+# End time: 00:43:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 11
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:55 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 00:43:55 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:55 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 00:43:55 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:55 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 00:43:55 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:55 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 00:43:55 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:43:55 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# ** Error: ./DE1_SoC.sv(26): (vlog-2730) Undefined variable: 'SW0'.
+# ** Error: ./DE1_SoC.sv(34): (vlog-2730) Undefined variable: 'SW0'.
+# -- Compiling module DE1_SoC_testbench
+# End time: 00:43:55 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./runlab.do line 11
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog "./DE1_SoC.sv""
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:33 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 00:44:33 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:33 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 00:44:34 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:34 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 00:44:34 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:34 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 00:44:34 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:44:34 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 00:44:34 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:44:37 on Jan 13,2024, Elapsed time: 7:05:50
+# Errors: 13, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work parking_lot_change_testbench 
+# Start time: 00:44:37 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.parking_lot_change_testbench
+# Loading work.parking_lot_change
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftwfs4ev".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwfs4ev
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module parking_lot_change_testbench at ./parking_lot_change.sv line 122
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:31 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 00:58:31 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:31 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 00:58:32 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:32 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 00:58:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:32 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 00:58:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:58:32 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 00:58:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 00:58:33 on Jan 13,2024, Elapsed time: 0:13:56
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work five_bit_counter_testbench 
+# Start time: 00:58:33 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.five_bit_counter_testbench
+# Loading work.five_bit_counter
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlft6xrw59".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6xrw59
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Simulation stop requested.
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:31 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:04:31 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:31 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:04:31 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:31 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:04:32 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:32 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:04:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:32 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 01:04:32 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:04:33 on Jan 13,2024, Elapsed time: 0:06:00
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work car_count_display_testbench 
+# Start time: 01:04:33 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.car_count_display_testbench
+# Loading work.car_count_display
+# Loading work.display_num_on_hex
+# ** Error: Cannot open macro file: car_count_display_wave.do
+# Error in macro ./runlab.do line 21
+# Cannot open macro file: car_count_display_wave.do
+#     while executing
+# "do car_count_display_wave.do"
+add wave -position end  sim:/car_count_display_testbench/COUNT
+add wave -position end  sim:/car_count_display_testbench/HEX0
+add wave -position end  sim:/car_count_display_testbench/HEX1
+add wave -position end  sim:/car_count_display_testbench/HEX2
+add wave -position end  sim:/car_count_display_testbench/HEX3
+add wave -position end  sim:/car_count_display_testbench/HEX4
+add wave -position end  sim:/car_count_display_testbench/HEX5
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftt6jkb2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt6jkb2
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1/car_count_display_wave.do}
+# Break key hit
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:54 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:04:54 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:54 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:04:54 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:54 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:04:54 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:54 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:04:54 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:04:54 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 01:04:54 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:04:56 on Jan 13,2024, Elapsed time: 0:00:23
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work car_count_display_testbench 
+# Start time: 01:04:56 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.car_count_display_testbench
+# Loading work.car_count_display
+# Loading work.display_num_on_hex
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlft7m9qg0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7m9qg0
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:23 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:09:23 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:23 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:09:23 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:23 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:09:23 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:23 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:09:24 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:24 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 01:09:24 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:09:25 on Jan 13,2024, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work display_num_on_hex_testbench 
+# Start time: 01:09:25 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.display_num_on_hex_testbench
+# Loading work.display_num_on_hex
+# ** Error: Cannot open macro file: display_num_on_hex_wave.do
+# Error in macro ./runlab.do line 21
+# Cannot open macro file: display_num_on_hex_wave.do
+#     while executing
+# "do display_num_on_hex_wave.do"
+add wave -position end  sim:/display_num_on_hex_testbench/num
+add wave -position end  sim:/display_num_on_hex_testbench/HEX
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftq109q7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq109q7
+# Break key hit
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:39 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:09:39 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:39 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:09:40 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:40 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:09:40 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:40 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:09:40 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:09:40 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 01:09:40 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:09:42 on Jan 13,2024, Elapsed time: 0:00:17
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work display_num_on_hex_testbench 
+# Start time: 01:09:42 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.display_num_on_hex_testbench
+# Loading work.display_num_on_hex
+# ** Error: Cannot open macro file: display_num_on_hex_wave.do
+# Error in macro ./runlab.do line 21
+# Cannot open macro file: display_num_on_hex_wave.do
+#     while executing
+# "do display_num_on_hex_wave.do"
+add wave -position end  sim:/display_num_on_hex_testbench/num
+add wave -position end  sim:/display_num_on_hex_testbench/HEX
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftdvxvjz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdvxvjz
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1/display_num_on_hex_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:10:03 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:10:03 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:10:03 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:10:03 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:10:03 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:10:04 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:10:04 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:10:04 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:10:04 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC
+# 	DE1_SoC_testbench
+# End time: 01:10:04 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:10:08 on Jan 13,2024, Elapsed time: 0:00:26
+# Errors: 3, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work display_num_on_hex_testbench 
+# Start time: 01:10:08 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.display_num_on_hex_testbench
+# Loading work.display_num_on_hex
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftxkij3b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxkij3b
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:14 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:42:14 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:14 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:42:14 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:14 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:42:14 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:14 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:42:14 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:14 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 01:42:15 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 01:42:21 on Jan 13,2024, Elapsed time: 0:32:13
+# Errors: 0, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 01:42:21 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.parking_lot_change
+# Loading work.five_bit_counter
+# ** Error: (vsim-3037) ./DE1_SoC.sv(51): Missing instance name in instantiation of 'car_count_display'.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 16
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:56 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:42:56 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:56 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:42:56 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:56 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:42:56 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:56 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:42:56 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:42:56 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 01:42:56 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 01:42:21 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.parking_lot_change
+# Loading work.five_bit_counter
+# ** Error: (vsim-3037) ./DE1_SoC.sv(51): Missing instance name in instantiation of 'car_count_display'.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 16
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:43:48 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:43:49 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:43:49 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:43:49 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:43:49 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:43:49 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:43:49 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:43:49 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:43:49 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 01:43:49 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 01:42:21 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.parking_lot_change
+# Loading work.five_bit_counter
+# Loading work.car_count_display
+# Loading work.display_num_on_hex
+# ** Error (suppressible): (vsim-8885) ./DE1_SoC.sv(65): Illegal inout port connection for port 'V_GPIO' to reg type.
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_testbench/dut File: ./DE1_SoC.sv
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runlab.do PAUSED at line 16
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:10 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:44:10 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:10 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:44:10 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:10 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:44:10 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:10 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:44:11 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:11 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 01:44:11 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 01:42:21 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.parking_lot_change
+# Loading work.five_bit_counter
+# Loading work.car_count_display
+# Loading work.display_num_on_hex
+# ** Error: Cannot open macro file: DE1_SoC_wave.do
+# Error in macro ./runlab.do line 21
+# Cannot open macro file: DE1_SoC_wave.do
+#     while executing
+# "do DE1_SoC_wave.do"
+add wave -position end  sim:/DE1_SoC_testbench/CLOCK_50
+add wave -position end  sim:/DE1_SoC_testbench/V_GPIO
+add wave -position end  sim:/DE1_SoC_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_testbench/HEX5
+add wave -position end  sim:/DE1_SoC_testbench/SW2
+add wave -position end  sim:/DE1_SoC_testbench/SW1
+add wave -position end  sim:/DE1_SoC_testbench/SW0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftg2sftz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftg2sftz
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1/DE1_SoC_wave.do}
+# Break key hit
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:43 on Jan 13,2024
+# vlog -reportprogress 300 ./parking_lot_change.sv 
+# -- Compiling module parking_lot_change
+# -- Compiling module parking_lot_change_testbench
+# 
+# Top level modules:
+# 	parking_lot_change_testbench
+# End time: 01:44:43 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:43 on Jan 13,2024
+# vlog -reportprogress 300 ./five_bit_counter.sv 
+# -- Compiling module five_bit_counter
+# -- Compiling module five_bit_counter_testbench
+# 
+# Top level modules:
+# 	five_bit_counter_testbench
+# End time: 01:44:43 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:43 on Jan 13,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 01:44:43 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:43 on Jan 13,2024
+# vlog -reportprogress 300 ./car_count_display.sv 
+# -- Compiling module car_count_display
+# -- Compiling module car_count_display_testbench
+# 
+# Top level modules:
+# 	car_count_display_testbench
+# End time: 01:44:44 on Jan 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:44:44 on Jan 13,2024
+# vlog -reportprogress 300 ./DE1_SoC.sv 
+# -- Compiling module DE1_SoC
+# -- Compiling module DE1_SoC_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_testbench
+# End time: 01:44:44 on Jan 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 01:44:45 on Jan 13,2024, Elapsed time: 0:02:24
+# Errors: 6, Warnings: 2
+# vsim -voptargs=""+acc"" -t 1ps -lib work DE1_SoC_testbench 
+# Start time: 01:44:45 on Jan 13,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_testbench
+# Loading work.DE1_SoC
+# Loading work.parking_lot_change
+# Loading work.five_bit_counter
+# Loading work.car_count_display
+# Loading work.display_num_on_hex
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftmg58mg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmg58mg
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Simulation stop requested.
+# End time: 02:38:35 on Jan 13,2024, Elapsed time: 0:53:50
+# Errors: 0, Warnings: 2

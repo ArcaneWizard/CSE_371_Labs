@@ -1,0 +1,144 @@
+|memory
+HEX0[0] <= display_num_on_hex:data_out_display.HEX
+HEX0[1] <= display_num_on_hex:data_out_display.HEX
+HEX0[2] <= display_num_on_hex:data_out_display.HEX
+HEX0[3] <= display_num_on_hex:data_out_display.HEX
+HEX0[4] <= display_num_on_hex:data_out_display.HEX
+HEX0[5] <= display_num_on_hex:data_out_display.HEX
+HEX0[6] <= display_num_on_hex:data_out_display.HEX
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= display_num_on_hex:data_in_display.HEX
+HEX2[1] <= display_num_on_hex:data_in_display.HEX
+HEX2[2] <= display_num_on_hex:data_in_display.HEX
+HEX2[3] <= display_num_on_hex:data_in_display.HEX
+HEX2[4] <= display_num_on_hex:data_in_display.HEX
+HEX2[5] <= display_num_on_hex:data_in_display.HEX
+HEX2[6] <= display_num_on_hex:data_in_display.HEX
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= display_num_on_hex:address_byte_one.HEX
+HEX4[1] <= display_num_on_hex:address_byte_one.HEX
+HEX4[2] <= display_num_on_hex:address_byte_one.HEX
+HEX4[3] <= display_num_on_hex:address_byte_one.HEX
+HEX4[4] <= display_num_on_hex:address_byte_one.HEX
+HEX4[5] <= display_num_on_hex:address_byte_one.HEX
+HEX4[6] <= display_num_on_hex:address_byte_one.HEX
+HEX5[0] <= display_num_on_hex:address_byte_two.HEX
+HEX5[1] <= display_num_on_hex:address_byte_two.HEX
+HEX5[2] <= display_num_on_hex:address_byte_two.HEX
+HEX5[3] <= display_num_on_hex:address_byte_two.HEX
+HEX5[4] <= display_num_on_hex:address_byte_two.HEX
+HEX5[5] <= display_num_on_hex:address_byte_two.HEX
+HEX5[6] <= display_num_on_hex:address_byte_two.HEX
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+KEY[0] => memory_array.we_a.CLK
+KEY[0] => memory_array.waddr_a[4].CLK
+KEY[0] => memory_array.waddr_a[3].CLK
+KEY[0] => memory_array.waddr_a[2].CLK
+KEY[0] => memory_array.waddr_a[1].CLK
+KEY[0] => memory_array.waddr_a[0].CLK
+KEY[0] => memory_array.data_a[3].CLK
+KEY[0] => memory_array.data_a[2].CLK
+KEY[0] => memory_array.data_a[1].CLK
+KEY[0] => memory_array.data_a[0].CLK
+KEY[0] => dataOut[0].CLK
+KEY[0] => dataOut[1].CLK
+KEY[0] => dataOut[2].CLK
+KEY[0] => dataOut[3].CLK
+KEY[0] => memory_array.CLK0
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ~NO_FANOUT~
+KEY[3] => ~NO_FANOUT~
+SW[0] => dataIn[0].IN1
+SW[1] => dataIn[1].IN1
+SW[2] => dataIn[2].IN1
+SW[3] => dataIn[3].IN1
+SW[4] => address[0].IN1
+SW[5] => address[1].IN1
+SW[6] => address[2].IN1
+SW[7] => address[3].IN1
+SW[8] => address[4].IN1
+SW[9] => dataOut.OUTPUTSELECT
+SW[9] => dataOut.OUTPUTSELECT
+SW[9] => dataOut.OUTPUTSELECT
+SW[9] => dataOut.OUTPUTSELECT
+SW[9] => memory_array.we_a.DATAIN
+SW[9] => memory_array.WE
+
+
+|memory|display_num_on_hex:address_byte_two
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memory|display_num_on_hex:address_byte_one
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memory|display_num_on_hex:data_in_display
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|memory|display_num_on_hex:data_out_display
+num[0] => Decoder0.IN3
+num[1] => Decoder0.IN2
+num[2] => Decoder0.IN1
+num[3] => Decoder0.IN0
+HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

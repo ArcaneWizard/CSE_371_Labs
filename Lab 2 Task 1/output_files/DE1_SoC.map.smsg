@@ -1,0 +1,5 @@
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning (10273): Verilog HDL warning at display_num_on_hex.sv(34): extended using "x" or "z" File: G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 2/display_num_on_hex.sv Line: 34
+Warning (10034): Output port "HEX1" at memory.sv(13) has no driver File: G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 2/memory.sv Line: 13
+Warning (10034): Output port "HEX3" at memory.sv(13) has no driver File: G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 2/memory.sv Line: 13
+Warning (10034): Output port "LEDR" at memory.sv(14) has no driver File: G:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 2/memory.sv Line: 14
