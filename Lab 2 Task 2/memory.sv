@@ -1,93 +1,62 @@
-```
-
 /* Raghav Narula, Pedro Amarante
    1/21/2024
-	CSE 371
-	Lab 2, Task 1
+    CSE 371
+    Lab 2, Task 1
    
-	Implementation of a RAM unit on an FPGA 
+    implementation of a RAM unit on an FPGA 
 */
 
-module memory #(parameter whichClock = 15)
+module memory
   (
-  input  logic       CLOCK_50,  // 50MHz clock
+  input logic CLOCK_50,
   output logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5,
   output logic [9:0] LEDR,
   input  logic [3:0] KEY,     // True when not pressed, False when pressed
   input  logic [9:0] SW
   );
 
-  // Generate clk off of CLOCK_50, whichClock picks rate.
-  logic [31:0] clk;
+ 
+  logic [3:0] dataIn;
+  logic [4:0] rdaddress;
+  logic [4:0] wdaddress;
+  logic [3:0] dataOut;
+  logic write;
+  logic reset;
+  
+  assign dataIn = SW[3:0];
+  assign wdaddress = SW[8:4];
+  
+  // display the content of each four-bit word (in hexadecimal format) on the 7-segment display HEX0
+  assign HEX0 = dataOut;
+  
+  // as each word is being displayed, show its address (in hex format) on the 7-segment displays HEX3−2
+  display_num_on_hex address_byte_two (.num(rdaddress[4]), .HEX(HEX3));
+  display_num_on_hex address_byte_one (.num(rdaddress[3:0]), .HEX(HEX2)); 
+  
+  // Use the 50 MHz clock, CLOCK_50, 
+  logic [31:0] clock;
   clock_divider cdiv (.clock(CLOCK_50), .divided_clocks(clk));
   
-  logic [3:0] memory_array [31:0];
-  logic [3:0] dataIn = SW[3:0];
-  logic [4:0] address = SW[8:4];
-  logic [3:0] dataOut;
-
-  logic write = SW[9];
-  logic clock = ~KEY[0];
+  //use KEY 0 as a reset input.
+  assign reset = ~KEY[0];
   
-  display_num_on_hex address_byte_two (.num(address[4]), .HEX(HEX5));
-  display_num_on_hex address_byte_one (.num(address[3:0]), .HEX(HEX4));
+  //use KEY3 as your wr_en.
+  assign write = ~KEY[3];
+  
+  
+  
+  display_num_on_hex address_byte_two (.num(wdaddress[4]), .HEX(HEX5));
+  display_num_on_hex address_byte_one (.num(wdaddress[3:0]), .HEX(HEX4));
+ 
   display_num_on_hex data_in_display (.num(dataIn), .HEX(HEX2));
   display_num_on_hex data_out_display (.num(dataOut), .HEX(HEX0));
   
-   always_ff@(posedge clk) begin
-        if (write) begin
-            memory_array[address] <= dataIn;
-                dataOut <= memory_array[address];
-        end
-    end
+  ram32x4 memory(.clock(clock), .data(dataIn), .rdaddress(rdaddress), .wraddress(wdaddress), .wren(write), .q(dataOut));
+  
+    
+  
+
+
+  
     
 endmodule  // DE1_SoC
-
-module memory_tb();
-
-    // Parameters
-    localparam whichClock = 15;
-
-    // Inputs
-    logic clock;
-    logic [3:0] KEY;
-    logic [9:0] SW;
-
-    // Outputs
-    logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5;
-    logic [9:0] LEDR;
-
-    
-    memory #(.whichClock(whichClock)) dut (
-        .CLOCK_50(clock), 
-        .HEX0(HEX0), .HEX1(HEX1), .HEX2(HEX2), .HEX3(HEX3), .HEX4(HEX4), .HEX5(HEX5),
-        .LEDR(LEDR),
-        .KEY(KEY), 
-        .SW(SW)
-    );
-    parameter CLOCK_PERIOD=100;
-      initial begin
-         clock <= 0;
-         forever #(CLOCK_PERIOD/2) clock <= ~clock;
-      end
-
-    // Testbench stimulus
-    initial begin
-        // Initialize Inputs
-        KEY <= 4'b1111; @(posedge clock);
-              
-        // Write and read a value
-        SW[9] <= 1'b1;  // Enable write
-        SW[8:4] <= 5'b00010;  // Address
-        SW[3:0] <= 4'b1010;  // Data
-        @(posedge clock);
-        SW[9] <= 1'b0;  // Disable write
-            @(posedge clock);
-        // Change address to read
-        SW[8:4] <= 5'b00010;
-          @(posedge clock);
-        
-    end
-
-endmodule
-```
