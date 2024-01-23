@@ -17,46 +17,36 @@ module memory
 
  
   logic [3:0] dataIn;
-  logic [4:0] rdaddress;
-  logic [4:0] wdaddress;
+  logic [4:0] raddress;
+  logic [4:0] waddress;
   logic [3:0] dataOut;
   logic write;
   logic reset;
-  
-  assign dataIn = SW[3:0];
-  assign wdaddress = SW[8:4];
-  
-  // display the content of each four-bit word (in hexadecimal format) on the 7-segment display HEX0
-  assign HEX0 = dataOut;
-  
-  // as each word is being displayed, show its address (in hex format) on the 7-segment displays HEX3−2
-  display_num_on_hex address_byte_two (.num(rdaddress[4]), .HEX(HEX3));
-  display_num_on_hex address_byte_one (.num(rdaddress[3:0]), .HEX(HEX2)); 
-  
-  // Use the 50 MHz clock, CLOCK_50, 
-  logic [31:0] clock;
-  clock_divider cdiv (.clock(CLOCK_50), .divided_clocks(clk));
+  logic one_sec_clk;
   
   //use KEY 0 as a reset input.
   assign reset = ~KEY[0];
   
-  //use KEY3 as your wr_en.
-  assign write = ~KEY[3];
+  always_ff @(posedge CLOCK_50) begin
+	  dataIn <= SW[3:0];
+	  waddress <= SW[8:4];
+	  write <= ~KEY[3];  
+  end
   
   
+  one_sec_clock one_sec (.clock(CLOCK_50), .new_clock(one_sec_clk)); 
+  five_bit_counter counter (.clk(one_sec_clk), .reset(reset), .inc(1), .dec(0), .out(raddress));
   
-  display_num_on_hex address_byte_two (.num(wdaddress[4]), .HEX(HEX5));
-  display_num_on_hex address_byte_one (.num(wdaddress[3:0]), .HEX(HEX4));
- 
-  display_num_on_hex data_in_display (.num(dataIn), .HEX(HEX2));
-  display_num_on_hex data_out_display (.num(dataOut), .HEX(HEX0));
+  // as each word is being displayed, show its address (in hex format) on the 7-segment displays HEX3−2
+  display_num_on_hex hex0 (.num(dataOut), .HEX(HEX0));
+  display_num_on_hex hex2 (.num(raddress[3:0]), .HEX(HEX2)); 
+  display_num_on_hex hex3 (.num(raddress[4]), .HEX(HEX3));
   
-  ram32x4 memory(.clock(clock), .data(dataIn), .rdaddress(rdaddress), .wraddress(wdaddress), .wren(write), .q(dataOut));
+  display_num_on_hex address_byte_two (.num(waddress[4]), .HEX(HEX5));
+  display_num_on_hex address_byte_one (.num(waddress[3:0]), .HEX(HEX4));
+  display_num_on_hex hex1 (.num(dataIn), .HEX(HEX1));
   
-    
   
-
-
-  
+  ram32x4 memory(.clock(CLOCK_50), .data(dataIn), .rdaddress(raddress), .wraddress(waddress), .wren(write), .q(dataOut));
     
 endmodule  // DE1_SoC
