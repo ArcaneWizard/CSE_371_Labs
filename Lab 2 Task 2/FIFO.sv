@@ -11,7 +11,7 @@
 */
 
 module FIFO #(
-    parameter depth = 32,  // Assuming the depth matches the memory's addressable depth
+    parameter depth = 5,  // Assuming the depth matches the memory's addressable depth
     parameter width = 4    // Assuming the width matches the memory's data width
 )(
     input logic clk, reset,
