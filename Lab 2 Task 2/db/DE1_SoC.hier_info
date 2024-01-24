@@ -9,10 +9,10 @@ pushedValue[2] => pushedValue[2].IN1
 pushedValue[3] => pushedValue[3].IN1
 empty <= FIFO_Control:control.empty
 full <= FIFO_Control:control.full
-poppedValue[0] <= FIFO_Control:control.poppedValue
-poppedValue[1] <= FIFO_Control:control.poppedValue
-poppedValue[2] <= FIFO_Control:control.poppedValue
-poppedValue[3] <= FIFO_Control:control.poppedValue
+poppedValue[0] <= FIFO_Control:control.readValue
+poppedValue[1] <= FIFO_Control:control.readValue
+poppedValue[2] <= FIFO_Control:control.readValue
+poppedValue[3] <= FIFO_Control:control.readValue
 
 
 |FIFO|FIFO_Control:control

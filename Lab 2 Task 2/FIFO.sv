@@ -38,7 +38,7 @@ module FIFO #(
         .full(full),
         .readAddr(readAddr),
         .writeAddr(writeAddr),
-		  .poppedValue(poppedValue)
+		  .readValue(poppedValue)
     );
 
     // Instantiate Dual-Port RAM

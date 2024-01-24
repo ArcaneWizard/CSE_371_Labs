@@ -1,5 +1,5 @@
 Flow report for DE1_SoC
-Tue Jan 23 18:18:43 2024
+Tue Jan 23 18:28:59 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Tue Jan 23 18:18:43 2024      ;
-; Quartus Prime Version       ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
-; Revision Name               ; DE1_SoC                                     ;
-; Top-level Entity Name       ; FIFO                                        ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CSEMA5F31C6                                ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Tue Jan 23 18:28:59 2024       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; DE1_SoC                                     ;
+; Top-level Entity Name           ; FIFO                                        ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSEMA5F31C6                                ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 6                                           ;
+; Total pins                      ; 14                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/23/2024 18:18:36 ;
+; Start date & time ; 01/23/2024 18:28:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DE1_SoC             ;
 +-------------------+---------------------+
@@ -74,7 +79,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 176156949463248.170606271504608        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 176156949463248.170606333121548        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -97,7 +102,7 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4788 MB             ; 00:00:04                           ;
+; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4869 MB             ; 00:00:04                           ;
 ; Total                ; 00:00:08     ; --                      ; --                  ; 00:00:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 

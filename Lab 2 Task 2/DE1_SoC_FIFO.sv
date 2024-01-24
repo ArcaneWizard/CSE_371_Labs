@@ -16,10 +16,11 @@ module DE1_SoC_FIFO
   );
 
   logic [7:0] outputBus;
-  display_num_on_hex in_data_byte1 (.num(inputBus[7:4), .HEX(HEX5));
-  display_num_on_hex in_data_byte0 (.num(inputBus[3:0]), .HEX(HEX4));
-  display_num_on_hex out_data_byte1 (.num(outputBus[7:4), .HEX(HEX1));
+  display_num_on_hex in_data_byte1 (.num(SW[7:4]), .HEX(HEX5));
+  display_num_on_hex in_data_byte0 (.num(SW[3:0]), .HEX(HEX4));
+  display_num_on_hex out_data_byte1 (.num(outputBus[7:4]), .HEX(HEX1));
   display_num_on_hex out_data_byte0 (.num(outputBus[3:0]), .HEX(HEX0));
-  FIFO fpga_fifo (.clk(CLOCK_50), .reset(~KEY[0]), .read(~KEY[1]), .write(~KEY[2]), .inputBus(SW[7:0]), .empty(LEDR[8]), .full(LEDR[9], .outputBus(outputBus);
+  FIFO fpga_fifo (.clk(CLOCK_50), .reset(~KEY[0]), .pop(~KEY[1]), .push(~KEY[2]), .pushedValue(SW[7:0]), .empty(LEDR[8]), 
+	.full(LEDR[9]), .poppedValue(outputBus));
  
 endmodule  // DE1_SoC

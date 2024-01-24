@@ -1,0 +1,561 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/My Drive/Life/UW/2023 Winter Quarter/CSE 369 (Digital Design)/lab1
+vcar_count_display
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1705139084
+!i10b 1
+!s100 R^R8K_i^W3QT:fZ08Ok6h3
+IT]kj[3:HI@QL::6HYL`402
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 car_count_display_sv_unit
+S1
+Z5 dG:/My Drive/Life/UW/2024 Winter Quater/CSE 371/Lab 1
+Z6 w1705138565
+Z7 8./car_count_display.sv
+Z8 F./car_count_display.sv
+Z9 L0 12
+Z10 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z11 !s108 1705139083.000000
+Z12 !s107 ./car_count_display.sv|
+Z13 !s90 -reportprogress|300|./car_count_display.sv|
+!i113 1
+Z14 tCvgOpt 0
+vcar_count_display_testbench
+R1
+R2
+!i10b 1
+!s100 nKDXRETfaeCcdPnISFFZz1
+IInEz4efVe:7BE@XUGLT2z0
+R3
+R4
+S1
+R5
+R6
+R7
+R8
+L0 65
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 1
+R14
+vDE1_SoC
+R1
+R2
+!i10b 1
+!s100 ;Jnd3@n0`4AH@RYW6M8n20
+I;dgJBZS@O:b789dCP3YNd2
+R3
+Z15 !s105 DE1_SoC_sv_unit
+S1
+R5
+Z16 w1705139046
+Z17 8./DE1_SoC.sv
+Z18 F./DE1_SoC.sv
+R9
+R10
+r1
+!s85 0
+31
+Z19 !s108 1705139084.000000
+Z20 !s107 ./DE1_SoC.sv|
+Z21 !s90 -reportprogress|300|./DE1_SoC.sv|
+!i113 1
+R14
+n@d@e1_@so@c
+vDE1_SoC_testbench
+R1
+R2
+!i10b 1
+!s100 c2bIl9SCJD@S?<INSC_IV0
+I^1a^7@RPizV3zC<_4P_=g3
+R3
+R15
+S1
+R5
+R16
+R17
+R18
+Z22 L0 58
+R10
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 1
+R14
+n@d@e1_@so@c_testbench
+vdisplay_num_on_hex
+R1
+Z23 !s110 1706060142
+!i10b 1
+!s100 =YEo?j8LmED3n98[UzVMe3
+IYd54e>hm=20A8DX^9W3O>3
+R3
+Z24 !s105 display_num_on_hex_sv_unit
+S1
+Z25 dC:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2
+Z26 w1705969609
+Z27 8./display_num_on_hex.sv
+Z28 F./display_num_on_hex.sv
+L0 10
+R10
+r1
+!s85 0
+31
+Z29 !s108 1706060142.000000
+Z30 !s107 ./display_num_on_hex.sv|
+Z31 !s90 -reportprogress|300|./display_num_on_hex.sv|
+!i113 1
+R14
+vdisplay_num_on_hex_testbench
+R1
+R23
+!i10b 1
+!s100 NB>0dHOV5::7BYXaD@J[o1
+ImC`FOf<B]<eJDY8dY^EHd0
+R3
+R24
+S1
+R25
+R26
+R27
+R28
+L0 41
+R10
+r1
+!s85 0
+31
+R29
+R30
+R31
+!i113 1
+R14
+vfive_bit_counter
+R1
+R23
+!i10b 1
+!s100 E5gXLZFZ:l19LAicbbbfi3
+IbLNG8U_A<QcXf2AnB13To2
+R3
+Z32 !s105 five_bit_counter_sv_unit
+S1
+R25
+Z33 w1705135037
+Z34 8./five_bit_counter.sv
+Z35 F./five_bit_counter.sv
+R9
+R10
+r1
+!s85 0
+31
+R29
+Z36 !s107 ./five_bit_counter.sv|
+Z37 !s90 -reportprogress|300|./five_bit_counter.sv|
+!i113 1
+R14
+vfive_bit_counter_testbench
+R1
+R23
+!i10b 1
+!s100 __4]h5_^37VHMVKB=QfQ:2
+IDz3@z@F^MiOdLf5JAm8lh3
+R3
+R32
+S1
+R25
+R33
+R34
+R35
+R22
+R10
+r1
+!s85 0
+31
+R29
+R36
+R37
+!i113 1
+R14
+vhw1p1
+R1
+Z38 !s110 1704942760
+!i10b 1
+!s100 MITKZJ[aERZmN@Dl@R0FP0
+I0JiEaCAjFJ^dP]@eO76V^2
+R3
+Z39 !s105 hw1p1_sv_unit
+S1
+Z40 dG:/My Drive/Life/UW/2024 Winter Quater/CSE 371/hw 0
+Z41 w1704941926
+Z42 8./hw1p1.sv
+Z43 F./hw1p1.sv
+L0 4
+R10
+r1
+!s85 0
+31
+Z44 !s108 1704942760.000000
+Z45 !s107 ./hw1p1.sv|
+Z46 !s90 -reportprogress|300|./hw1p1.sv|
+!i113 1
+R14
+vhw1p1_testbench
+R1
+R38
+!i10b 1
+!s100 S>FBCCBh8JW0EHGZ6GAPB2
+Ig?NnoohNBdRPQJ=9nMl350
+R3
+R39
+S1
+R40
+R41
+R42
+R43
+L0 30
+R10
+r1
+!s85 0
+31
+R44
+R45
+R46
+!i113 1
+R14
+vhw1p2
+R1
+Z47 !s110 1704944094
+!i10b 1
+!s100 8LJi9>MN<f9>zKL5f`_PZ1
+I`J5iA9:HIOz28=olER1SE2
+R3
+Z48 !s105 hw1p2_sv_unit
+S1
+R40
+Z49 w1704944092
+Z50 8./hw1p2.sv
+Z51 F./hw1p2.sv
+L0 4
+R10
+r1
+!s85 0
+31
+Z52 !s108 1704944094.000000
+Z53 !s107 ./hw1p2.sv|
+Z54 !s90 -reportprogress|300|./hw1p2.sv|
+!i113 1
+R14
+vhw1p2_testbench
+R1
+R47
+!i10b 1
+!s100 Yho<6L^0_aT=gO1>E1GE33
+Ic4<R;NNBZk2MbXNP[zXzj3
+R3
+R48
+S1
+R40
+R49
+R50
+R51
+L0 50
+R10
+r1
+!s85 0
+31
+R52
+R53
+R54
+!i113 1
+R14
+vlab1
+R1
+Z55 !s110 1674143272
+!i10b 1
+!s100 WJ2kBg7TgFZAkJMOMo=W_1
+IQD4NR][aEVU:oHDj;ebEU0
+R3
+Z56 !s105 lab1_sv_unit
+S1
+R0
+Z57 w1674126728
+Z58 8./lab1.sv
+Z59 F./lab1.sv
+L0 4
+R10
+r1
+!s85 0
+31
+Z60 !s108 1674143272.000000
+Z61 !s107 ./lab1.sv|
+Z62 !s90 -reportprogress|300|./lab1.sv|
+!i113 1
+R14
+vlab1_testbench
+R1
+R55
+!i10b 1
+!s100 nT6QL>ib2]b_;R5Z1akl]3
+I[]@Jog9gdFZIY2PS:nBfR0
+R3
+R56
+S1
+R0
+R57
+R58
+R59
+R22
+R10
+r1
+!s85 0
+31
+R60
+R61
+R62
+!i113 1
+R14
+vmemory
+R1
+R23
+!i10b 1
+!s100 DTe=POjB=Mj8_M;Pd9>PG0
+IP;0UmRSiXWMgDA2adIJd?0
+R3
+Z63 !s105 memory_sv_unit
+S1
+R25
+Z64 w1706060132
+Z65 8./memory.sv
+Z66 F./memory.sv
+R9
+R10
+r1
+!s85 0
+31
+R29
+Z67 !s107 ./memory.sv|
+Z68 !s90 -reportprogress|300|./memory.sv|
+!i113 1
+R14
+vmemory_testbench
+R1
+R23
+!i10b 1
+!s100 AX0XQ?YI<Vh?7b`]U:<9l0
+I8HRD4CL55I<36=mb:<bHz2
+R3
+R63
+S1
+R25
+R64
+R65
+R66
+L0 55
+R10
+r1
+!s85 0
+31
+R29
+R67
+R68
+!i113 1
+R14
+vmux2_1
+R1
+R55
+!i10b 1
+!s100 db@k@fnga:kY6M:UDM?iV1
+IJ>QNS`gdkcliNLo;gQk_83
+R3
+Z69 !s105 mux2_1_sv_unit
+S1
+R0
+Z70 w1674120239
+Z71 8./mux2_1.sv
+Z72 F./mux2_1.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R60
+Z73 !s107 ./mux2_1.sv|
+Z74 !s90 -reportprogress|300|./mux2_1.sv|
+!i113 1
+R14
+vmux2_1_testbench
+R1
+R55
+!i10b 1
+!s100 HD@T^SN98V29N[RTNWV9L0
+I@54aRHHO8z1f@j5P3F;^h2
+R3
+R69
+S1
+R0
+R70
+R71
+R72
+L0 8
+R10
+r1
+!s85 0
+31
+R60
+R73
+R74
+!i113 1
+R14
+vmux4_1
+R1
+R55
+!i10b 1
+!s100 E7R1Cg6SkhaPO]9<9MDj:0
+I11V?a:nHG07?Y623?jN2j0
+R3
+Z75 !s105 mux4_1_sv_unit
+S1
+R0
+Z76 w1674092724
+Z77 8./mux4_1.sv
+Z78 F./mux4_1.sv
+L0 1
+R10
+r1
+!s85 0
+31
+R60
+Z79 !s107 ./mux4_1.sv|
+Z80 !s90 -reportprogress|300|./mux4_1.sv|
+!i113 1
+R14
+vmux4_1_testbench
+R1
+R55
+!i10b 1
+!s100 Lj@3aiAF:ebXQj>YX1=n33
+I27Z0dM0fDQ;j;K;nec2iU2
+R3
+R75
+S1
+R0
+R76
+R77
+R78
+R9
+R10
+r1
+!s85 0
+31
+R60
+R79
+R80
+!i113 1
+R14
+vone_sec_clock
+R1
+R23
+!i10b 1
+!s100 2B]bMbHV:d8RGJ[FW6f9Y2
+I=mTbLf=H2SmUifCAmCzTJ3
+R3
+!s105 one_sec_clock_sv_unit
+S1
+R25
+w1706059239
+8./one_sec_clock.sv
+F./one_sec_clock.sv
+L0 2
+R10
+r1
+!s85 0
+31
+R29
+!s107 ./one_sec_clock.sv|
+!s90 -reportprogress|300|./one_sec_clock.sv|
+!i113 1
+R14
+vparking_lot_change
+R1
+Z81 !s110 1705139083
+!i10b 1
+!s100 m`?8`V`Uen^Hc2nQI7@^g0
+IB3_V2:]A?aZ:XZ;nV7:Sn1
+R3
+Z82 !s105 parking_lot_change_sv_unit
+S1
+R5
+Z83 w1705138856
+Z84 8./parking_lot_change.sv
+Z85 F./parking_lot_change.sv
+L0 14
+R10
+r1
+!s85 0
+31
+R11
+Z86 !s107 ./parking_lot_change.sv|
+Z87 !s90 -reportprogress|300|./parking_lot_change.sv|
+!i113 1
+R14
+vparking_lot_change_testbench
+R1
+R81
+!i10b 1
+!s100 _IEUJ3SHU39<H<zE;6emR3
+I6]ano<65VTejSZPVY:dV13
+R3
+R82
+S1
+R5
+R83
+R84
+R85
+L0 106
+R10
+r1
+!s85 0
+31
+R11
+R86
+R87
+!i113 1
+R14
+vram32x4
+R23
+!i10b 1
+!s100 9JJedTWeU:e;4^:[EX2fk2
+IU_H_?NX9h0<FEnGY_9ObS0
+R3
+R25
+w1705970114
+8./ram32x4.v
+F./ram32x4.v
+L0 40
+R10
+r1
+!s85 0
+31
+R29
+!s107 ./ram32x4.v|
+!s90 -reportprogress|300|./ram32x4.v|
+!i113 1
+R14
