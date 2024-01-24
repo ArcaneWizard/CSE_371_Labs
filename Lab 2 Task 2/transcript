@@ -695,3 +695,37 @@ do runlab.do
 # 	ram32x4
 # End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 8
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
+# Start time: 17:35:42 on Jan 23,2024
+# Loading sv_std.std
+# Loading work.memory_testbench
+# Loading work.memory
+# Loading work.one_sec_clock
+# Loading work.five_bit_counter
+# Loading work.display_num_on_hex
+# Loading work.ram32x4
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.altsyncram_body
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) ./memory.sv(37): [TFMPC] - Too few port connections. Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/one_sec File: ./one_sec_clock.sv
+# ** Warning: (vsim-3722) ./memory.sv(37): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'inc'. The port definition is at: ./five_bit_counter.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
+# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: ./five_bit_counter.sv(12).
+#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
+# ** Warning: (vsim-3015) ./memory.sv(43): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/hex3 File: ./display_num_on_hex.sv
+# ** Warning: (vsim-3015) ./memory.sv(45): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/address_byte_two File: ./display_num_on_hex.sv
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlftk36670".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftk36670
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

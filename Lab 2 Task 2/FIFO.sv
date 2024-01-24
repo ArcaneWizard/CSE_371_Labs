@@ -15,38 +15,41 @@ module FIFO #(
     parameter width = 4    // Assuming the width matches the memory's data width
 )(
     input logic clk, reset,
-    input logic read, write,
-    input logic [width-1:0] inputBus,
+    input logic pop, push,
+    input logic [width-1:0] pushedValue,
     output logic empty, full,
-    output logic [width-1:0] outputBus
+    output logic [width-1:0] poppedValue
 );
 
     logic wr_en;
+	 logic [width-1:0] frontValue;
     logic [depth-1:0] readAddr, writeAddr;
 
     // Instantiate FIFO Control
     // The FIFO_Control module manages read and write operations and tracks the FIFO's status.
-    FIFO_Control #(depth) control (
+    FIFO_Control #(depth, width) control (
         .clk(clk),
         .reset(reset),
-        .read(read),
-        .write(write),
+        .read(pop),
+        .write(push),
+		  .frontValue(frontValue),
         .wr_en(wr_en),
         .empty(empty),
         .full(full),
         .readAddr(readAddr),
-        .writeAddr(writeAddr)
+        .writeAddr(writeAddr),
+		  .poppedValue(poppedValue)
     );
 
     // Instantiate Dual-Port RAM
     // The ram32x4 module provides memory storage for the FIFO, with separate read and write addresses.
     ram32x4 memory (
         .clock(clk),
-        .data(inputBus),
+        .data(pushedValue),
         .rdaddress(readAddr),
         .wraddress(writeAddr),
         .wren(wr_en),
-        .q(outputBus)
+        .q(frontvalue)
     );
 
 endmodule

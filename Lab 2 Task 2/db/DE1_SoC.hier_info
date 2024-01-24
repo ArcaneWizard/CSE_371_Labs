@@ -1,209 +1,95 @@
-|memory
-CLOCK_50 => CLOCK_50.IN2
-HEX0[0] <= display_num_on_hex:hex0.HEX
-HEX0[1] <= display_num_on_hex:hex0.HEX
-HEX0[2] <= display_num_on_hex:hex0.HEX
-HEX0[3] <= display_num_on_hex:hex0.HEX
-HEX0[4] <= display_num_on_hex:hex0.HEX
-HEX0[5] <= display_num_on_hex:hex0.HEX
-HEX0[6] <= display_num_on_hex:hex0.HEX
-HEX1[0] <= display_num_on_hex:hex1.HEX
-HEX1[1] <= display_num_on_hex:hex1.HEX
-HEX1[2] <= display_num_on_hex:hex1.HEX
-HEX1[3] <= display_num_on_hex:hex1.HEX
-HEX1[4] <= display_num_on_hex:hex1.HEX
-HEX1[5] <= display_num_on_hex:hex1.HEX
-HEX1[6] <= display_num_on_hex:hex1.HEX
-HEX2[0] <= display_num_on_hex:hex2.HEX
-HEX2[1] <= display_num_on_hex:hex2.HEX
-HEX2[2] <= display_num_on_hex:hex2.HEX
-HEX2[3] <= display_num_on_hex:hex2.HEX
-HEX2[4] <= display_num_on_hex:hex2.HEX
-HEX2[5] <= display_num_on_hex:hex2.HEX
-HEX2[6] <= display_num_on_hex:hex2.HEX
-HEX3[0] <= display_num_on_hex:hex3.HEX
-HEX3[1] <= display_num_on_hex:hex3.HEX
-HEX3[2] <= display_num_on_hex:hex3.HEX
-HEX3[3] <= display_num_on_hex:hex3.HEX
-HEX3[4] <= display_num_on_hex:hex3.HEX
-HEX3[5] <= display_num_on_hex:hex3.HEX
-HEX3[6] <= display_num_on_hex:hex3.HEX
-HEX4[0] <= display_num_on_hex:address_byte_one.HEX
-HEX4[1] <= display_num_on_hex:address_byte_one.HEX
-HEX4[2] <= display_num_on_hex:address_byte_one.HEX
-HEX4[3] <= display_num_on_hex:address_byte_one.HEX
-HEX4[4] <= display_num_on_hex:address_byte_one.HEX
-HEX4[5] <= display_num_on_hex:address_byte_one.HEX
-HEX4[6] <= display_num_on_hex:address_byte_one.HEX
-HEX5[0] <= display_num_on_hex:address_byte_two.HEX
-HEX5[1] <= display_num_on_hex:address_byte_two.HEX
-HEX5[2] <= display_num_on_hex:address_byte_two.HEX
-HEX5[3] <= display_num_on_hex:address_byte_two.HEX
-HEX5[4] <= display_num_on_hex:address_byte_two.HEX
-HEX5[5] <= display_num_on_hex:address_byte_two.HEX
-HEX5[6] <= display_num_on_hex:address_byte_two.HEX
-KEY[0] => comb.IN1
-KEY[1] => ~NO_FANOUT~
-KEY[2] => ~NO_FANOUT~
-KEY[3] => write.DATAIN
-SW[0] => dataIn[0].DATAIN
-SW[1] => dataIn[1].DATAIN
-SW[2] => dataIn[2].DATAIN
-SW[3] => dataIn[3].DATAIN
-SW[4] => waddress[0].DATAIN
-SW[5] => waddress[1].DATAIN
-SW[6] => waddress[2].DATAIN
-SW[7] => waddress[3].DATAIN
-SW[8] => waddress[4].DATAIN
-SW[9] => ~NO_FANOUT~
+|FIFO
+clk => clk.IN2
+reset => reset.IN1
+pop => pop.IN1
+push => push.IN1
+pushedValue[0] => pushedValue[0].IN1
+pushedValue[1] => pushedValue[1].IN1
+pushedValue[2] => pushedValue[2].IN1
+pushedValue[3] => pushedValue[3].IN1
+empty <= FIFO_Control:control.empty
+full <= FIFO_Control:control.full
+poppedValue[0] <= FIFO_Control:control.poppedValue
+poppedValue[1] <= FIFO_Control:control.poppedValue
+poppedValue[2] <= FIFO_Control:control.poppedValue
+poppedValue[3] <= FIFO_Control:control.poppedValue
 
 
-|memory|one_sec_clock:one_sec
-clock => divided_clocks[0].CLK
-clock => divided_clocks[1].CLK
-clock => divided_clocks[2].CLK
-clock => divided_clocks[3].CLK
-clock => divided_clocks[4].CLK
-clock => divided_clocks[5].CLK
-clock => divided_clocks[6].CLK
-clock => divided_clocks[7].CLK
-clock => divided_clocks[8].CLK
-clock => divided_clocks[9].CLK
-clock => divided_clocks[10].CLK
-clock => divided_clocks[11].CLK
-clock => divided_clocks[12].CLK
-clock => divided_clocks[13].CLK
-clock => divided_clocks[14].CLK
-clock => divided_clocks[15].CLK
-clock => divided_clocks[16].CLK
-clock => divided_clocks[17].CLK
-clock => divided_clocks[18].CLK
-clock => divided_clocks[19].CLK
-clock => divided_clocks[20].CLK
-clock => divided_clocks[21].CLK
-clock => divided_clocks[22].CLK
-clock => divided_clocks[23].CLK
-clock => divided_clocks[24].CLK
-clock => divided_clocks[25].CLK
-clock => divided_clocks[26].CLK
-clock => divided_clocks[27].CLK
-clock => divided_clocks[28].CLK
-clock => divided_clocks[29].CLK
-clock => divided_clocks[30].CLK
-clock => divided_clocks[31].CLK
-clock => new_clock~reg0.CLK
-new_clock <= new_clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+|FIFO|FIFO_Control:control
+clk => readValue[0]~reg0.CLK
+clk => readValue[1]~reg0.CLK
+clk => readValue[2]~reg0.CLK
+clk => readValue[3]~reg0.CLK
+clk => fifo_count[0].CLK
+clk => fifo_count[1].CLK
+clk => fifo_count[2].CLK
+clk => fifo_count[3].CLK
+clk => fifo_count[4].CLK
+clk => write_ptr[0].CLK
+clk => write_ptr[1].CLK
+clk => write_ptr[2].CLK
+clk => write_ptr[3].CLK
+clk => write_ptr[4].CLK
+clk => read_ptr[0].CLK
+clk => read_ptr[1].CLK
+clk => read_ptr[2].CLK
+clk => read_ptr[3].CLK
+clk => read_ptr[4].CLK
+reset => readValue[0]~reg0.PRESET
+reset => readValue[1]~reg0.ACLR
+reset => readValue[2]~reg0.ACLR
+reset => readValue[3]~reg0.ACLR
+reset => fifo_count[0].ACLR
+reset => fifo_count[1].ACLR
+reset => fifo_count[2].ACLR
+reset => fifo_count[3].ACLR
+reset => fifo_count[4].ACLR
+reset => write_ptr[0].ACLR
+reset => write_ptr[1].ACLR
+reset => write_ptr[2].ACLR
+reset => write_ptr[3].ACLR
+reset => write_ptr[4].ACLR
+reset => read_ptr[0].ACLR
+reset => read_ptr[1].ACLR
+reset => read_ptr[2].ACLR
+reset => read_ptr[3].ACLR
+reset => read_ptr[4].ACLR
+read => always0.IN1
+read => read_ptr.OUTPUTSELECT
+read => read_ptr.OUTPUTSELECT
+read => read_ptr.OUTPUTSELECT
+read => read_ptr.OUTPUTSELECT
+read => read_ptr.OUTPUTSELECT
+write => wr_en.IN1
+write => write_ptr.OUTPUTSELECT
+write => write_ptr.OUTPUTSELECT
+write => write_ptr.OUTPUTSELECT
+write => write_ptr.OUTPUTSELECT
+write => write_ptr.OUTPUTSELECT
+frontValue[0] => readValue[0]~reg0.DATAIN
+frontValue[1] => readValue[1]~reg0.DATAIN
+frontValue[2] => readValue[2]~reg0.DATAIN
+frontValue[3] => readValue[3]~reg0.DATAIN
+wr_en <= wr_en.DB_MAX_OUTPUT_PORT_TYPE
+empty <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+full <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+readAddr[0] <= read_ptr[0].DB_MAX_OUTPUT_PORT_TYPE
+readAddr[1] <= read_ptr[1].DB_MAX_OUTPUT_PORT_TYPE
+readAddr[2] <= read_ptr[2].DB_MAX_OUTPUT_PORT_TYPE
+readAddr[3] <= read_ptr[3].DB_MAX_OUTPUT_PORT_TYPE
+readAddr[4] <= read_ptr[4].DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[0] <= write_ptr[0].DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[1] <= write_ptr[1].DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[2] <= write_ptr[2].DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[3] <= write_ptr[3].DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[4] <= write_ptr[4].DB_MAX_OUTPUT_PORT_TYPE
+readValue[0] <= readValue[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readValue[1] <= readValue[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readValue[2] <= readValue[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readValue[3] <= readValue[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|memory|five_bit_counter:counter
-clk => out[0]~reg0.CLK
-clk => out[1]~reg0.CLK
-clk => out[2]~reg0.CLK
-clk => out[3]~reg0.CLK
-clk => out[4]~reg0.CLK
-reset => out.OUTPUTSELECT
-reset => out.OUTPUTSELECT
-reset => out.OUTPUTSELECT
-reset => out.OUTPUTSELECT
-reset => out.OUTPUTSELECT
-inc => always0.IN0
-inc => always1.IN0
-inc => always0.IN0
-dec => always0.IN1
-dec => always1.IN1
-dec => always0.IN1
-out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:hex0
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:hex2
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:hex3
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:address_byte_two
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:address_byte_one
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|display_num_on_hex:hex1
-num[0] => Decoder0.IN3
-num[1] => Decoder0.IN2
-num[2] => Decoder0.IN1
-num[3] => Decoder0.IN0
-HEX[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-HEX[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-HEX[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-HEX[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-HEX[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-HEX[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-HEX[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|memory|ram32x4:memory
+|FIFO|ram32x4:memory
 clock => clock.IN1
 data[0] => data[0].IN1
 data[1] => data[1].IN1
@@ -226,7 +112,7 @@ q[2] <= altsyncram:altsyncram_component.q_b
 q[3] <= altsyncram:altsyncram_component.q_b
 
 
-|memory|ram32x4:memory|altsyncram:altsyncram_component
+|FIFO|ram32x4:memory|altsyncram:altsyncram_component
 wren_a => altsyncram_p622:auto_generated.wren_a
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -274,7 +160,7 @@ eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|memory|ram32x4:memory|altsyncram:altsyncram_component|altsyncram_p622:auto_generated
+|FIFO|ram32x4:memory|altsyncram:altsyncram_component|altsyncram_p622:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR

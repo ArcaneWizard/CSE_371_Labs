@@ -11,13 +11,16 @@
 */
 
 module FIFO_Control #(
-    parameter depth = 5
+    parameter depth = 5,
+	 parameter width = 4
 )(
     input logic clk, reset,
     input logic read, write,
+	 input logic [width-1:0] frontValue,
     output logic wr_en,
     output logic empty, full,
-    output logic [depth-1:0] readAddr, writeAddr
+    output logic [depth-1:0] readAddr, writeAddr,
+	 output logic [width-1:0] readValue
 );
 
     // Read and write pointers
@@ -25,6 +28,8 @@ module FIFO_Control #(
     
     // FIFO count to track the number of elements in the FIFO
     logic [depth-1:0] fifo_count;
+	 
+	 logic fullCount = 2**depth-1;
 
     // FIFO status signals
     assign empty = (fifo_count == 0);
@@ -44,16 +49,18 @@ module FIFO_Control #(
             read_ptr <= 0;
             write_ptr <= 0;
             fifo_count <= 0;
+				readValue <= 7'b0000001;
         end
         else begin
             // Update write pointer and count on write request
             if (write && !full) begin
-                write_ptr <= write_ptr + 1;
+				    write_ptr <= (write == fullCount) ? 0 : write_ptr + 1;
                 fifo_count <= fifo_count + 1;
             end
             // Update read pointer and count on read request
             if (read && !empty) begin
-                read_ptr <= read_ptr + 1;
+				    readValue <= frontValue;
+				    read_ptr <= (read == fullCount) ? 0 : read_ptr + 1;
                 fifo_count <= fifo_count - 1;
             end
         end

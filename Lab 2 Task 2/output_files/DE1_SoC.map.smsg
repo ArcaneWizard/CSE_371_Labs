@@ -1,6 +1,6 @@
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (10281): Verilog HDL Declaration information at memory.sv(12): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 12
-Info (10281): Verilog HDL Declaration information at memory.sv(12): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 12
-Info (10281): Verilog HDL Declaration information at memory.sv(12): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 12
-Info (10281): Verilog HDL Declaration information at memory.sv(12): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 12
+Info (10281): Verilog HDL Declaration information at memory.sv(15): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 15
+Info (10281): Verilog HDL Declaration information at memory.sv(15): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 15
+Info (10281): Verilog HDL Declaration information at memory.sv(15): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 15
+Info (10281): Verilog HDL Declaration information at memory.sv(15): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 15
 Warning (10273): Verilog HDL warning at display_num_on_hex.sv(34): extended using "x" or "z" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/display_num_on_hex.sv Line: 34
