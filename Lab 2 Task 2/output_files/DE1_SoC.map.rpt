@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DE1_SoC
-Mon Jan 22 18:42:47 2024
+Tue Jan 23 17:10:02 2024
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -53,14 +53,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jan 22 18:42:47 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jan 23 17:10:02 2024       ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                   ; DE1_SoC                                     ;
 ; Top-level Entity Name           ; memory                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 48                                          ;
-; Total pins                      ; 67                                          ;
+; Total pins                      ; 57                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 128                                         ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -177,28 +177,28 @@ agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; ram32x4.v                        ; yes             ; User Wizard-Generated File         ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v              ;         ;
-; ram32x4.mif                      ; yes             ; User Memory Initialization File    ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.mif            ;         ;
-; memory.sv                        ; yes             ; User SystemVerilog HDL File        ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv              ;         ;
-; five_bit_counter.sv              ; yes             ; User SystemVerilog HDL File        ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/five_bit_counter.sv    ;         ;
-; one_sec_clock.sv                 ; yes             ; User SystemVerilog HDL File        ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/one_sec_clock.sv       ;         ;
-; display_num_on_hex.sv            ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/display_num_on_hex.sv  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
-; aglobal170.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal170.inc          ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc              ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
-; db/altsyncram_p622.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/db/altsyncram_p622.tdf ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                   ; Library ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------+---------+
+; ram32x4.v                        ; yes             ; User Wizard-Generated File             ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v              ;         ;
+; memory.sv                        ; yes             ; User SystemVerilog HDL File            ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv              ;         ;
+; five_bit_counter.sv              ; yes             ; User SystemVerilog HDL File            ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/five_bit_counter.sv    ;         ;
+; one_sec_clock.sv                 ; yes             ; User SystemVerilog HDL File            ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/one_sec_clock.sv       ;         ;
+; display_num_on_hex.sv            ; yes             ; User SystemVerilog HDL File            ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/display_num_on_hex.sv  ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altsyncram.tdf          ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/stratix_ram_block.inc   ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_mux.inc             ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_decode.inc          ;         ;
+; aglobal170.inc                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal170.inc          ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/a_rdenreg.inc           ;         ;
+; altrom.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altrom.inc              ;         ;
+; altram.inc                       ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altram.inc              ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                           ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/altdpram.inc            ;         ;
+; db/altsyncram_p622.tdf           ; yes             ; Auto-Generated Megafunction            ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/db/altsyncram_p622.tdf ;         ;
+; ram32x4.mif                      ; yes             ; Auto-Found Memory Initialization File  ; C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.mif            ;         ;
++----------------------------------+-----------------+----------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -206,18 +206,18 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 43             ;
+; Estimate of Logic utilization (ALMs needed) ; 41             ;
 ;                                             ;                ;
 ; Combinational ALUT usage for logic          ; 73             ;
 ;     -- 7 input functions                    ; 0              ;
-;     -- 6 input functions                    ; 11             ;
-;     -- 5 input functions                    ; 0              ;
-;     -- 4 input functions                    ; 28             ;
-;     -- <=3 input functions                  ; 34             ;
+;     -- 6 input functions                    ; 7              ;
+;     -- 5 input functions                    ; 1              ;
+;     -- 4 input functions                    ; 29             ;
+;     -- <=3 input functions                  ; 36             ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 48             ;
 ;                                             ;                ;
-; I/O pins                                    ; 67             ;
+; I/O pins                                    ; 57             ;
 ; Total MLAB memory bits                      ; 0              ;
 ; Total block memory bits                     ; 128            ;
 ;                                             ;                ;
@@ -225,8 +225,8 @@ agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 47             ;
-; Total fan-out                               ; 527            ;
-; Average fan-out                             ; 2.03           ;
+; Total fan-out                               ; 507            ;
+; Average fan-out                             ; 2.12           ;
 +---------------------------------------------+----------------+
 
 
@@ -235,7 +235,7 @@ agreement for further details.
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name        ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------+--------------------+--------------+
-; |memory                                   ; 73 (1)              ; 48 (10)                   ; 128               ; 0          ; 67   ; 0            ; |memory                                                                               ; ram32x4            ; work         ;
+; |memory                                   ; 73 (1)              ; 48 (10)                   ; 128               ; 0          ; 57   ; 0            ; |memory                                                                               ; ram32x4            ; work         ;
 ;    |display_num_on_hex:address_byte_one|  ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory|display_num_on_hex:address_byte_one                                           ; display_num_on_hex ; work         ;
 ;    |display_num_on_hex:hex0|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory|display_num_on_hex:hex0                                                       ; display_num_on_hex ; work         ;
 ;    |display_num_on_hex:hex1|              ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory|display_num_on_hex:hex1                                                       ; display_num_on_hex ; work         ;
@@ -425,10 +425,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 47                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 5                           ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 28                          ;
-;         6 data inputs ; 11                          ;
-; boundary_port         ; 67                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 29                          ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 7                           ;
+; boundary_port         ; 57                          ;
 ; stratixv_ram_block    ; 4                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
@@ -451,26 +453,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Jan 22 18:42:40 2024
+    Info: Processing started: Tue Jan 23 17:09:55 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DE1_SoC -c DE1_SoC
 Info (20030): Parallel compilation is enabled and will use 14 of the 14 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ram32x4.v
     Info (12023): Found entity 1: ram32x4 File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file memory.sv
+Info (12021): Found 2 design units, including 2 entities, in source file memory.sv
     Info (12023): Found entity 1: memory File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 9
+    Info (12023): Found entity 2: memory_tb File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 52
 Info (12021): Found 2 design units, including 2 entities, in source file five_bit_counter.sv
     Info (12023): Found entity 1: five_bit_counter File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/five_bit_counter.sv Line: 12
     Info (12023): Found entity 2: five_bit_counter_testbench File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/five_bit_counter.sv Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file one_sec_clock.sv
     Info (12023): Found entity 1: one_sec_clock File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/one_sec_clock.sv Line: 2
-Info (12127): Elaborating entity "memory" for the top level hierarchy
-Info (12128): Elaborating entity "one_sec_clock" for hierarchy "one_sec_clock:one_sec" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 37
-Info (12128): Elaborating entity "five_bit_counter" for hierarchy "five_bit_counter:counter" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 38
-Warning (12125): Using design file display_num_on_hex.sv, which is not specified as a design file for the current project, but contains definitions for 2 design units and 2 entities in project
+Info (12021): Found 2 design units, including 2 entities, in source file display_num_on_hex.sv
     Info (12023): Found entity 1: display_num_on_hex File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/display_num_on_hex.sv Line: 10
     Info (12023): Found entity 2: display_num_on_hex_testbench File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/display_num_on_hex.sv Line: 41
-Info (12128): Elaborating entity "display_num_on_hex" for hierarchy "display_num_on_hex:hex0" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 41
-Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:memory" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 50
+Info (12127): Elaborating entity "memory" for the top level hierarchy
+Info (12128): Elaborating entity "one_sec_clock" for hierarchy "one_sec_clock:one_sec" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 34
+Info (12128): Elaborating entity "five_bit_counter" for hierarchy "five_bit_counter:counter" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 35
+Info (12128): Elaborating entity "display_num_on_hex" for hierarchy "display_num_on_hex:hex0" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 38
+Info (12128): Elaborating entity "ram32x4" for hierarchy "ram32x4:memory" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory.sv Line: 47
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram32x4:memory|altsyncram:altsyncram_component" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v Line: 89
 Info (12130): Elaborated megafunction instantiation "ram32x4:memory|altsyncram:altsyncram_component" File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v Line: 89
 Info (12133): Instantiated megafunction "ram32x4:memory|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/ram32x4.v Line: 89
@@ -503,14 +506,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/output_files/DE1_SoC.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 154 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 144 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 52 output pins
+    Info (21059): Implemented 42 output pins
     Info (21061): Implemented 83 logic cells
     Info (21064): Implemented 4 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4901 megabytes
-    Info: Processing ended: Mon Jan 22 18:42:47 2024
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4902 megabytes
+    Info: Processing ended: Tue Jan 23 17:10:02 2024
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:04
 

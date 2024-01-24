@@ -4,21 +4,21 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog "./parking_lot_change.sv"
+vlog "./memory.sv"
 vlog "./five_bit_counter.sv"
 vlog "./display_num_on_hex.sv"
-vlog "./car_count_display.sv"
-vlog "./DE1_SoC.sv"
+vlog "./one_sec_clock.sv"
+vlog "./ram32x4.v"
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work DE1_SoC_testbench
+vsim -L altera_mf_ver -voptargs="+acc" -t 1ps -lib work memory_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for
 #     the module you are testing.
-do DE1_SoC_wave.do
+do memory_wave.do
 
 # Set the window types
 view wave
