@@ -11,7 +11,7 @@
 */
 
 module FIFO_Control #(
-    parameter depth = 4
+    parameter depth = 5
 )(
     input logic clk, reset,
     input logic read, write,
