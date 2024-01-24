@@ -71,7 +71,6 @@ module FIFO_Control #(
 
 endmodule
 
-
 /* FIFO_Control tests covering expected, unexpected and edgecase behaviour */
 module FIFO_Control_testbench();
     
@@ -80,9 +79,8 @@ module FIFO_Control_testbench();
     logic [width-1:0] frontValue, readValue;
     logic wr_en, empty, full;
     logic [depth-1:0] readAddr, writeAddr;
-	 
-	 
-	 logic [depth-1:0] fullCount = 2**depth-1;
+
+    logic [depth-1:0] fullCount = 2**depth-1;
 
     // Instantiate the FIFO_Control module
     FIFO_Control #(depth, width) dut (
@@ -143,4 +141,3 @@ module FIFO_Control_testbench();
     end
 
 endmodule  // FIFO_Control_testbench
-

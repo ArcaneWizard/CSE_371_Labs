@@ -53,3 +53,67 @@ module FIFO #(
     );
 
 endmodule
+
+/* FIFO tests covering expected, unexpected and edgecase behaviour */
+module FIFO_testbench();
+    
+    parameter depth = 5, width = 4;
+    logic clk, reset, pop, push;
+    logic [width-1:0] pushedValue, poppedValue;
+    logic empty, full;
+
+
+    FIFO #(depth, width) dut (
+        .clk(clk),
+        .reset(reset),
+        .pop(pop),
+        .push(push),
+        .pushedValue(pushedValue),
+        .empty(empty),
+        .full(full),
+        .poppedValue(poppedValue)
+    );
+
+   
+    parameter CLOCK_PERIOD = 10;  // Clock period in time units
+    initial begin
+        clk = 0;
+        forever #(CLOCK_PERIOD / 2) clk = ~clk;
+    end
+
+    initial begin
+        // init inputs
+        reset = 1; pop = 0; push = 0; pushedValue = 0;
+        @(posedge clk);
+        reset = 0;
+        @(posedge clk);
+
+        // test pushing data 
+        repeat(depth - 1) begin
+            push = 1; pushedValue = pushedValue + 1; @(posedge clk);
+        end
+        push = 0;
+
+        // Test FIFO full condition
+        push = 1; pushedValue = pushedValue + 1; @(posedge clk);
+        push = 0;
+
+        // Test pop
+        repeat(depth) begin
+            pop = 1; @(posedge clk);
+        end
+        pop = 0;
+
+        // Test FIFO empty
+        pop = 1; @(posedge clk);
+        pop = 0;
+
+        // Test reset 
+        reset = 1; @(posedge clk);
+        reset = 0; @(posedge clk); 
+
+        
+    end
+
+endmodule  // FIFO_testbench
+
