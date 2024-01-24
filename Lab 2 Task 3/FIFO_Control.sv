@@ -67,3 +67,72 @@ module FIFO_Control #(
     end
 
 endmodule
+
+/* FIFO_Control tests covering expected, unexpected and edgecase behaviour */
+module FIFO_Control_testbench();
+    
+    parameter depth = 5, width = 4;
+    logic clk, reset, read, write;
+    logic [width-1:0] frontValue, readValue;
+    logic wr_en, empty, full;
+    logic [depth-1:0] readAddr, writeAddr;
+
+    // Instantiate the FIFO_Control module
+    FIFO_Control #(depth, width) dut (
+        .clk(clk), 
+        .reset(reset), 
+        .read(read), 
+        .write(write), 
+        .frontValue(frontValue),
+        .wr_en(wr_en),
+        .empty(empty), 
+        .full(full), 
+        .readAddr(readAddr), 
+        .writeAddr(writeAddr),
+        .readValue(readValue)
+    );
+
+    // Sset up the clock
+    parameter CLOCK_PERIOD = 10;  // Clock period in time units
+    initial begin
+        clk = 0;
+        forever #(CLOCK_PERIOD / 2) clk = ~clk;
+    end
+
+    initial begin
+        // initialize inputs
+        reset = 1; read = 0; write = 0; frontValue = 0;
+        @(posedge clk);  
+        reset = 0;
+        @(posedge clk);  
+
+        // test writing to the fifo
+        write = 1; frontValue = 4'hA; @(posedge clk);
+        write = 1; frontValue = 4'hB; @(posedge clk);
+        write = 0;
+
+        // test reading from the FIFO
+        read = 1; @(posedge clk);
+        read = 1; @(posedge clk);
+        read = 0;
+
+        // Test FIFO full condition
+        repeat(depth) begin
+            write = 1; frontValue = frontValue + 1; @(posedge clk);
+        end
+        write = 0;
+
+        // test FIFO empty condition
+        repeat(depth) begin
+            read = 1; @(posedge clk);
+        end
+        read = 0;
+
+        //  Test reset functionality
+        reset = 1; @(posedge clk);
+        reset = 0; @(posedge clk); 
+
+        
+    end
+
+endmodule  // FIFO_Control_testbench
