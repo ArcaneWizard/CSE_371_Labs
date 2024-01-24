@@ -22,5 +22,9 @@ module DE1_SoC_FIFO
   display_num_on_hex out_data_byte0 (.num(outputBus[3:0]), .HEX(HEX0));
   FIFO fpga_fifo (.clk(CLOCK_50), .reset(~KEY[0]), .pop(~KEY[1]), .push(~KEY[2]), .pushedValue(SW[7:0]), .empty(LEDR[8]), 
 	.full(LEDR[9]), .poppedValue(outputBus));
+  
+  assign LEDR[2] = KEY[2];
+  assign LEDR[1] = KEY[1];
+  assign LEDR[0] = KEY[0];
  
 endmodule  // DE1_SoC

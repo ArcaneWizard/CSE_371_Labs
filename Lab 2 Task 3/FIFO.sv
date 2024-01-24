@@ -43,7 +43,7 @@ module FIFO #(
 
     // Instantiate Dual-Port RAM
     // The ram32x4 module provides memory storage for the FIFO, with separate read and write addresses.
-    ram32x4 memory (
+    ram16x8 memory (
         .clock(clk),
         .data(pushedValue),
         .rdaddress(readAddr),

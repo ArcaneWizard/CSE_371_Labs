@@ -2,730 +2,466 @@
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:16:07 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
+# Start time: 19:00:37 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
 # 
 # Top level modules:
-# 	memory_testbench
-# End time: 17:16:08 on Jan 23,2024, Elapsed time: 0:00:01
+# 	FIFO_Control_testbench
+# End time: 19:00:37 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:16:08 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
+# Start time: 19:00:37 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
 # 
 # Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:16:08 on Jan 23,2024, Elapsed time: 0:00:00
+# 	DE1_SoC_FIFO
+# End time: 19:00:37 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:16:08 on Jan 23,2024
+# Start time: 19:00:37 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:00:38 on Jan 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:00:38 on Jan 23,2024
 # vlog -reportprogress 300 ./display_num_on_hex.sv 
 # -- Compiling module display_num_on_hex
 # -- Compiling module display_num_on_hex_testbench
 # 
 # Top level modules:
 # 	display_num_on_hex_testbench
-# End time: 17:16:08 on Jan 23,2024, Elapsed time: 0:00:00
+# End time: 19:00:38 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:16:08 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(16): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(19): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# End time: 17:16:08 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 10
-# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./one_sec_clock.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:18:31 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
+# Start time: 19:00:38 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
 # 
 # Top level modules:
-# 	memory_testbench
-# End time: 17:18:31 on Jan 23,2024, Elapsed time: 0:00:00
+# 	ram16x8
+# End time: 19:00:38 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:18:31 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:18:31 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:18:31 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:18:31 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:18:31 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(16): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(19): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# End time: 17:18:31 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 10
-# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./one_sec_clock.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:19:11 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:19:12 on Jan 23,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:19:12 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:19:12 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:19:12 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:19:12 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:19:12 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(16): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(19): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(10).
-# End time: 17:19:12 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 10
-# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./one_sec_clock.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:32 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:20:32 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:32 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:20:32 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:32 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:20:32 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:32 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(16): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(11).
-# ** Error (suppressible): (vlog-7061) ./one_sec_clock.sv(19): Variable 'divided_clocks' driven in an always_ff block, may not be driven by any other process. See ./one_sec_clock.sv(11).
-# End time: 17:20:32 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./runlab.do line 10
-# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog "./one_sec_clock.sv""
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:41 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:20:41 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:41 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:20:41 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:41 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:20:41 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:41 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# 
-# Top level modules:
-# 	one_sec_clock
-# End time: 17:20:41 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:20:41 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:20:41 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:20:41 on Jan 23,2024
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:00:38 on Jan 23,2024
 # Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'memory_testbench' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/memory File: ./ram32x4.v
-# ** Error: (vsim-3033) ./ram32x4.v(66): Instantiation of 'altsyncram' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/memory File: ./ram32x4.v
-#         Searched libraries:
-#             C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 16
-# Load canceled
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:16 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:30:16 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:16 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:30:16 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:16 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:30:16 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:16 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# 
-# Top level modules:
-# 	one_sec_clock
-# End time: 17:30:16 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:16 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:30:16 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:20:41 on Jan 23,2024
-# Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'memory_testbench' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/memory File: ./ram32x4.v
-# ** Error: (vsim-3033) ./ram32x4.v(66): Instantiation of 'altsyncram' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/memory File: ./ram32x4.v
-#         Searched libraries:
-#             C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 16
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:53 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:30:53 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:53 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:30:53 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:53 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:30:53 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:53 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# 
-# Top level modules:
-# 	one_sec_clock
-# End time: 17:30:53 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:30:53 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:30:53 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:20:41 on Jan 23,2024
-# Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# ** Error (suppressible): (vsim-3009) [TSCALE] - Module 'memory_testbench' does not have a timeunit/timeprecision specification in effect, but other modules do.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/memory File: ./ram32x4.v
-# Loading altera_mf_ver.altsyncram
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./runlab.do PAUSED at line 16
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:32:47 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:32:47 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:32:47 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:32:47 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:32:47 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:32:47 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:32:47 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# 
-# Top level modules:
-# 	one_sec_clock
-# End time: 17:32:47 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:32:47 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:32:47 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:20:41 on Jan 23,2024
-# Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3017) ./memory.sv(37): [TFMPC] - Too few port connections. Expected 3, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/one_sec File: ./one_sec_clock.sv
-# ** Warning: (vsim-3722) ./memory.sv(37): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'inc'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(43): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/hex3 File: ./display_num_on_hex.sv
-# ** Warning: (vsim-3015) ./memory.sv(45): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/address_byte_two File: ./display_num_on_hex.sv
-# ** Error: Cannot open macro file: memory.do
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+# ** Error: Cannot open macro file: FIFO_Control_wave.do
 # Error in macro ./runlab.do line 21
-# Cannot open macro file: memory.do
+# Cannot open macro file: FIFO_Control_wave.do
 #     while executing
-# "do memory.do"
-do runlab.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:44 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
-# 
-# Top level modules:
-# 	memory_testbench
-# End time: 17:33:44 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:45 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
-# 
-# Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:33:45 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:45 on Jan 23,2024
-# vlog -reportprogress 300 ./display_num_on_hex.sv 
-# -- Compiling module display_num_on_hex
-# -- Compiling module display_num_on_hex_testbench
-# 
-# Top level modules:
-# 	display_num_on_hex_testbench
-# End time: 17:33:45 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:45 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
-# 
-# Top level modules:
-# 	one_sec_clock
-# End time: 17:33:45 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:33:45 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:33:45 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:33:45 on Jan 23,2024, Elapsed time: 0:13:04
-# Errors: 8, Warnings: 6
-# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:33:46 on Jan 23,2024
-# Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3017) ./memory.sv(37): [TFMPC] - Too few port connections. Expected 3, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/one_sec File: ./one_sec_clock.sv
-# ** Warning: (vsim-3722) ./memory.sv(37): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'inc'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(43): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/hex3 File: ./display_num_on_hex.sv
-# ** Warning: (vsim-3015) ./memory.sv(45): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/address_byte_two File: ./display_num_on_hex.sv
-# ** Error: Cannot open macro file: memory.do
-# Error in macro ./runlab.do line 21
-# Cannot open macro file: memory.do
-#     while executing
-# "do memory.do"
-add wave -position end  sim:/memory_testbench/clock
-add wave -position end  sim:/memory_testbench/KEY
-add wave -position end  sim:/memory_testbench/SW
-add wave -position end  sim:/memory_testbench/HEX0
-add wave -position end  sim:/memory_testbench/HEX1
-add wave -position end  sim:/memory_testbench/HEX2
-add wave -position end  sim:/memory_testbench/HEX3
-add wave -position end  sim:/memory_testbench/HEX4
-add wave -position end  sim:/memory_testbench/HEX5
+# "do FIFO_Control_wave.do"
+add wave -position end  sim:/FIFO_Control_testbench/clk
+add wave -position end  sim:/FIFO_Control_testbench/reset
+add wave -position end  sim:/FIFO_Control_testbench/read
+add wave -position end  sim:/FIFO_Control_testbench/write
+add wave -position end  sim:/FIFO_Control_testbench/frontValue
+add wave -position end  sim:/FIFO_Control_testbench/readValue
+add wave -position end  sim:/FIFO_Control_testbench/wr_en
+add wave -position end  sim:/FIFO_Control_testbench/empty
+add wave -position end  sim:/FIFO_Control_testbench/full
+add wave -position end  sim:/FIFO_Control_testbench/readAddr
+add wave -position end  sim:/FIFO_Control_testbench/writeAddr
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
-#           Attempting to use alternate WLF file "./wlftsxzk6s".
+#           Attempting to use alternate WLF file "./wlftewxezi".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsxzk6s
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 2/memory_wave.do}
+#           Using alternate file: ./wlftewxezi
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 3/FIFO_Control_wave.do}
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:34:45 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
+# Start time: 19:01:09 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
 # 
 # Top level modules:
-# 	memory_testbench
-# End time: 17:34:45 on Jan 23,2024, Elapsed time: 0:00:00
+# 	FIFO_Control_testbench
+# End time: 19:01:09 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:34:45 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
+# Start time: 19:01:09 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
 # 
 # Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:34:46 on Jan 23,2024, Elapsed time: 0:00:01
+# 	DE1_SoC_FIFO
+# End time: 19:01:09 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:34:46 on Jan 23,2024
+# Start time: 19:01:09 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:01:09 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:01:09 on Jan 23,2024
 # vlog -reportprogress 300 ./display_num_on_hex.sv 
 # -- Compiling module display_num_on_hex
 # -- Compiling module display_num_on_hex_testbench
 # 
 # Top level modules:
 # 	display_num_on_hex_testbench
-# End time: 17:34:46 on Jan 23,2024, Elapsed time: 0:00:00
+# End time: 19:01:09 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:34:46 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
+# Start time: 19:01:09 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
 # 
 # Top level modules:
-# 	one_sec_clock
-# End time: 17:34:46 on Jan 23,2024, Elapsed time: 0:00:00
+# 	ram16x8
+# End time: 19:01:09 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:34:46 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:34:46 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:34:46 on Jan 23,2024, Elapsed time: 0:01:00
-# Errors: 3, Warnings: 8
-# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:34:46 on Jan 23,2024
+# End time: 19:01:10 on Jan 23,2024, Elapsed time: 0:00:32
+# Errors: 3, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:01:10 on Jan 23,2024
 # Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3017) ./memory.sv(37): [TFMPC] - Too few port connections. Expected 3, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/one_sec File: ./one_sec_clock.sv
-# ** Warning: (vsim-3722) ./memory.sv(37): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'inc'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(43): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/hex3 File: ./display_num_on_hex.sv
-# ** Warning: (vsim-3015) ./memory.sv(45): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/address_byte_two File: ./display_num_on_hex.sv
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
-#           Attempting to use alternate WLF file "./wlftyymytx".
+#           Attempting to use alternate WLF file "./wlft54ssdq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyymytx
+#           Using alternate file: ./wlft54ssdq
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/FIFO_Control_testbench/dut/fifo_count
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 3/FIFO_Control_wave.do}
 # Break key hit
 # Simulation stop requested.
 do runlab.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:35:42 on Jan 23,2024
-# vlog -reportprogress 300 ./memory.sv 
-# -- Compiling module memory
-# -- Compiling module memory_testbench
+# Start time: 19:02:48 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
 # 
 # Top level modules:
-# 	memory_testbench
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
+# 	FIFO_Control_testbench
+# End time: 19:02:48 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:35:42 on Jan 23,2024
-# vlog -reportprogress 300 ./five_bit_counter.sv 
-# -- Compiling module five_bit_counter
-# -- Compiling module five_bit_counter_testbench
+# Start time: 19:02:48 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
 # 
 # Top level modules:
-# 	five_bit_counter_testbench
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
+# 	DE1_SoC_FIFO
+# End time: 19:02:48 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:35:42 on Jan 23,2024
+# Start time: 19:02:48 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:02:48 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:02:48 on Jan 23,2024
 # vlog -reportprogress 300 ./display_num_on_hex.sv 
 # -- Compiling module display_num_on_hex
 # -- Compiling module display_num_on_hex_testbench
 # 
 # Top level modules:
 # 	display_num_on_hex_testbench
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
+# End time: 19:02:48 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:35:42 on Jan 23,2024
-# vlog -reportprogress 300 ./one_sec_clock.sv 
-# -- Compiling module one_sec_clock
+# Start time: 19:02:48 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
 # 
 # Top level modules:
-# 	one_sec_clock
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
+# 	ram16x8
+# End time: 19:02:48 on Jan 23,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 17:35:42 on Jan 23,2024
-# vlog -reportprogress 300 ./ram32x4.v 
-# -- Compiling module ram32x4
-# 
-# Top level modules:
-# 	ram32x4
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 17:35:42 on Jan 23,2024, Elapsed time: 0:00:56
-# Errors: 0, Warnings: 8
-# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work memory_testbench 
-# Start time: 17:35:42 on Jan 23,2024
+# End time: 19:02:50 on Jan 23,2024, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:02:50 on Jan 23,2024
 # Loading sv_std.std
-# Loading work.memory_testbench
-# Loading work.memory
-# Loading work.one_sec_clock
-# Loading work.five_bit_counter
-# Loading work.display_num_on_hex
-# Loading work.ram32x4
-# Loading altera_mf_ver.altsyncram
-# Loading altera_mf_ver.altsyncram_body
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3017) ./memory.sv(37): [TFMPC] - Too few port connections. Expected 3, found 2.
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/one_sec File: ./one_sec_clock.sv
-# ** Warning: (vsim-3722) ./memory.sv(37): [TFMPC] - Missing connection for port 'reset'.
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'inc'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(38): [PCDPC] - Port size (1) does not match connection size (32) for port 'dec'. The port definition is at: ./five_bit_counter.sv(12).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/counter File: ./five_bit_counter.sv
-# ** Warning: (vsim-3015) ./memory.sv(43): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/hex3 File: ./display_num_on_hex.sv
-# ** Warning: (vsim-3015) ./memory.sv(45): [PCDPC] - Port size (4) does not match connection size (1) for port 'num'. The port definition is at: ./display_num_on_hex.sv(10).
-#    Time: 0 ps  Iteration: 0  Instance: /memory_testbench/dut/address_byte_two File: ./display_num_on_hex.sv
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
-#           Attempting to use alternate WLF file "./wlftk36670".
+#           Attempting to use alternate WLF file "./wlftb43e8r".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftk36670
+#           Using alternate file: ./wlftb43e8r
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module FIFO_Control_testbench at ./FIFO_Control.sv line 103
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:05:59 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 19:05:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:05:59 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
+# 
+# Top level modules:
+# 	DE1_SoC_FIFO
+# End time: 19:05:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:05:59 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:05:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:05:59 on Jan 23,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 19:05:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:00 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 19:06:00 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:06:01 on Jan 23,2024, Elapsed time: 0:03:11
+# Errors: 0, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:06:01 on Jan 23,2024
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlfti9n2vg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfti9n2vg
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position end  sim:/FIFO_Control_testbench/dut/fullCount
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/ragha/Documents/Coding/UW/CSE_371/Lab 2 Task 3/FIFO_Control_wave.do}
+# Break key hit
+# Break in Module FIFO_Control_testbench at ./FIFO_Control.sv line 103
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:55 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 19:06:55 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:55 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
+# 
+# Top level modules:
+# 	DE1_SoC_FIFO
+# End time: 19:06:55 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:55 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:06:55 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:55 on Jan 23,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 19:06:55 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:06:55 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 19:06:55 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:06:57 on Jan 23,2024, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:06:57 on Jan 23,2024
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlft0tng7t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0tng7t
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module FIFO_Control_testbench at ./FIFO_Control.sv line 103
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:37 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 19:07:37 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:37 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
+# 
+# Top level modules:
+# 	DE1_SoC_FIFO
+# End time: 19:07:37 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:37 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:07:38 on Jan 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:38 on Jan 23,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 19:07:38 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:07:38 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 19:07:38 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:07:39 on Jan 23,2024, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:07:39 on Jan 23,2024
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: ragha  Hostname: RAGHAV_M16  ProcessID: 14024
+#           Attempting to use alternate WLF file "./wlfty1d634".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfty1d634
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit
+# Break in Module FIFO_Control_testbench at ./FIFO_Control.sv line 103
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:59 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO_Control.sv 
+# -- Compiling module FIFO_Control
+# -- Compiling module FIFO_Control_testbench
+# 
+# Top level modules:
+# 	FIFO_Control_testbench
+# End time: 19:08:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:59 on Jan 23,2024
+# vlog -reportprogress 300 ./DE1_SoC_FIFO.sv 
+# -- Compiling module DE1_SoC_FIFO
+# 
+# Top level modules:
+# 	DE1_SoC_FIFO
+# End time: 19:08:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:59 on Jan 23,2024
+# vlog -reportprogress 300 ./FIFO.sv 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 19:08:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:59 on Jan 23,2024
+# vlog -reportprogress 300 ./display_num_on_hex.sv 
+# -- Compiling module display_num_on_hex
+# -- Compiling module display_num_on_hex_testbench
+# 
+# Top level modules:
+# 	display_num_on_hex_testbench
+# End time: 19:08:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:59 on Jan 23,2024
+# vlog -reportprogress 300 ./ram16x8.v 
+# -- Compiling module ram16x8
+# 
+# Top level modules:
+# 	ram16x8
+# End time: 19:08:59 on Jan 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:09:01 on Jan 23,2024, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 2
+# vsim -L altera_mf_ver -voptargs=""+acc"" -t 1ps -lib work FIFO_Control_testbench 
+# Start time: 19:09:01 on Jan 23,2024
+# Loading sv_std.std
+# Loading work.FIFO_Control_testbench
+# Loading work.FIFO_Control
